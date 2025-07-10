@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Siman - Suscripción</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <header class="siman-header">
+    <div class="header-container">
+      <div class="logo">
+        <span class="logo-icon">◆</span>
+        <span class="logo-text">siman</span><span class="logo-dot">.com</span>
+      </div>
+      <div class="search-bar">
+        <i class="lucide lucide-search search-icon"></i>
+        <input type="text" placeholder="Buscar" />
+      </div>
+      <div class="header-icons">
+        <i class="lucide lucide-user"></i>
+        <i class="lucide lucide-shopping-cart"></i>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="subscription">
+      <h2>Suscríbete para recibir nuestras promociones</h2>
+      <form class="subscription-form" action="#" method="POST" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required placeholder="tuemail@ejemplo.com" />
+        <button type="submit" class="btn-cta">Suscribirme</button>
+      </form>
+      <p class="note">Al suscribirte, aceptas recibir correos con promociones y novedades.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Siman El Salvador - Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    function validarFormulario() {
+      const nombre = document.getElementById('nombre').value.trim();
+      const email = document.getElementById('email').value.trim();
+      if (!nombre || !email) {
+        alert('Completa todos los campos');
+        return false;
+      }
+      const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert('Correo inválido');
+        return false;
+      }
+      alert('¡Gracias por suscribirte!');
+      return true;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* Header estilo Siman */
+.siman-header {
+  background-color: #A63737;
+  padding: 0.5rem 1.5rem;
+}
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-secondary {
+  background: white;
+  color: #A63737;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #A63737;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btn-secondary:hover {
+  background: #A63737;
+  color: white;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo-icon { font-size: 1.2rem; margin-right: 0.25rem; }
+.logo-text { font-weight: 700; }
+.logo-dot { font-weight: 300; }
+.search-bar {
+  flex: 1;
+  margin: 0 2rem;
+  background-color: #4B1818;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 1rem;
+}
+.search-bar input {
+  background: transparent;
+  border: none;
+  color: white;
+  padding-left: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+}
+.search-bar input::placeholder { color: #ccc; }
+.search-icon { color: white; width: 20px; height: 20px; }
+.header-icons {
+  display: flex;
+  gap: 1rem;
+}
+.header-icons .lucide {
+  color: white;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* body */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #212121;
+}
+main { padding: 2rem; }
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #A63737;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.hero-text {
+  flex: 1;
+}
+.hero-media video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+.btn-cta {
+  background: #D50032;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Cards */
+.promotion-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.btn-buy {
+  margin-top: 0.5rem;
+  background-color: #D50032;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Formulario */
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.subscription-form input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.note {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
